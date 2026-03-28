@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Montefiore Square Redesign</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
+    nav{position:fixed;top:0;width:100%;background:#1f2937;color:#fff;padding:1rem 2rem;z-index:1000}
+    nav a{color:#fff;margin-right:1.5rem;text-decoration:none;font-weight:bold}
+    header{min-height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url('sandbox:/mnt/data/a_high_resolution_daytime_photograph_captures_a_vi.png') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:2rem}
+    header h1{font-size:3rem;margin-bottom:1rem}
+    section{padding:6rem 10%;min-height:60vh}
+    .alt{background:#f3f4f6}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:2rem}
+    .card{background:#fff;padding:2rem;border-radius:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+    img{max-width:100%;border-radius:16px}
+    footer{background:#111827;color:#fff;padding:3rem;text-align:center}
+    @media(max-width:768px){header h1{font-size:2rem}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#problem">Problem</a>
+    <a href="#site">Site</a>
+    <a href="#options">Options</a>
+    <a href="#final">Final Proposal</a>
+    <a href="#reflection">Reflection</a>
+  </nav>
+
+  <header id="home">
+    <div>
+      <h1>Montefiore Square Reimagined</h1>
+      <p>A Harlem-inspired wellness and community plaza redesign</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>This proposal redesigns Montefiore Square into a safer, greener, and more community-centered urban plaza. The core goal is to improve pedestrian comfort, public life, and neighborhood identity through better seating, planting, circulation, and programming.</p>
+  </section>
+
+  <section id="problem" class="alt">
+    <h2>The Problem</h2>
+    <div class="grid">
+      <div class="card"><h3>Safety</h3><p>Low visibility, undefined crossings, and weak nighttime lighting reduce comfort.</p></div>
+      <div class="card"><h3>Comfort</h3><p>Limited shade, rigid seating, and lack of seasonal planting make the plaza less inviting.</p></div>
+      <div class="card"><h3>Community Use</h3><p>The site currently lacks flexible zones for markets, events, and local gathering.</p></div>
+    </div>
+  </section>
+
+  <section id="site">
+    <h2>Site / Context</h2>
+    <p>Site analysis focused on pedestrian movement, accessibility, and neighborhood business activity. The redesign prioritizes circulation loops, rain gardens, ADA seating edges, and stronger storefront connections.</p>
+  </section>
+
+  <section id="options" class="alt">
+    <h2>Design Options</h2>
+    <div class="grid">
+      <div class="card"><img src="sandbox:/mnt/data/a_high_resolution_daytime_photograph_captures_a_vi.png" alt="Green wellness option"><p>Option A: Wellness garden plaza</p></div>
+      <div class="card"><img src="option2.png" alt="Market plaza option"><p>Option B: Weekend vendor plaza</p></div>
+      <div class="card"><img src="option3.png" alt="Art plaza option"><p>Option C: Cultural art and seating plaza</p></div>
+    </div>
+  </section>
+
+  <section id="final">
+    <h2>Final Proposal</h2>
+    <img src="sandbox:/mnt/data/a_high_resolution_daytime_photograph_captures_a_vi.png" alt="Final redesign render">
+    <p style="margin-top:1rem;">The final concept combines Harlem cultural identity, green infrastructure, curved social seating, better lighting, and vendor-ready flexible programming space.</p>
+  </section>
+
+  <section id="reflection" class="alt">
+    <h2>Reflection on AI Use</h2>
+    <p>AI supported fast visual exploration and helped compare multiple design atmospheres. Human judgment was essential for choosing realistic circulation, accessibility, and community-based programming decisions.</p>
+  </section>
+
+  <footer>
+    Midterm Project • AI-Assisted Website Design for an Urban Plaza
+  </footer>
+</body>
+</html>
