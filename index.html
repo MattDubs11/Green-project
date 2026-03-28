@@ -1,166 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Montefiore Square Redesign</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Montefiore Square Redesign</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      color: #222;
-      line-height: 1.6;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
+}
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #1f2937;
-      padding: 1rem 2rem;
-      z-index: 1000;
-    }
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  padding: 15px 40px;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 1.5rem;
-      font-weight: bold;
-    }
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('harlem-plaza-render.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.5rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
 
-    header {
-      padding-top: 80px;
-      text-align: center;
-      background: #f3f4f6;
-    }
+/* SECTION STYLE */
+.section {
+  padding: 80px 10%;
+}
 
-    header img {
-      width: 100%;
-      height: 600px;
-      object-fit: cover;
-      display: block;
-    }
+/* LIGHT SECTION */
+.light {
+  background: #f3f4f6;
+  color: #111;
+}
 
-    header h1 {
-      font-size: 3rem;
-      margin: 2rem 0 1rem;
-    }
+/* SPLIT SECTION */
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.split img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+.split div {
+  flex: 1;
+  padding: 20px;
+}
 
-    header p {
-      margin-bottom: 3rem;
-      font-size: 1.2rem;
-    }
+/* FULL IMAGE STRIP */
+.full-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
 
-    section {
-      padding: 5rem 10%;
-    }
-
-    .alt {
-      background: #f9fafb;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 18px;
-      padding: 1.5rem;
-      box-shadow: 0 8px 24px rgba(0,0,0,.08);
-    }
-
-    .card img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 16px;
-      margin-bottom: 1rem;
-    }
-
-    .final-image {
-      width: 100%;
-      height: 550px;
-      object-fit: cover;
-      border-radius: 18px;
-      margin-top: 2rem;
-    }
-
-    footer {
-      background: #111827;
-      color: white;
-      text-align: center;
-      padding: 3rem;
-    }
-  </style>
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: black;
+}
+</style>
 </head>
+
 <body>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#problem">Design Process</a>
-    <a href="#final">Final</a>
-  </nav>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#process">Process</a>
+  <a href="#final">Final</a>
+</nav>
 
-  <header id="home">
-    <img src="harlem-plaza-render.png" alt="Harlem Plaza Render">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div>
     <h1>Montefiore Square Reimagined</h1>
-    <p>A greener Harlem plaza with plants, seating, and wellness spaces</p>
-  </header>
+    <p>A greener Harlem plaza with community, seating, and wellness space</p>
+  </div>
+</section>
 
-  <section id="about">
-    <h2>About the Project</h2>
+<!-- ABOUT -->
+<section class="section light" id="about">
+  <h2>About the Project</h2>
+  <p>
+    This redesign transforms Montefiore Square into a vibrant Harlem public space
+    focused on greenery, safety, and community activity. The proposal explores
+    how AI-generated design ideas can improve everyday urban life.
+  </p>
+</section>
+
+<!-- BEFORE -->
+<section class="section split">
+  <div>
+    <h2>Before</h2>
     <p>
-      This redesign transforms Montefiore Square into a greener and more welcoming
-      pedestrian plaza inspired by Harlem community life, improved safety, and
-      stronger public gathering spaces.
+      The existing plaza lacks greenery, seating, and strong identity. It functions
+      more as a pass-through space than a destination.
     </p>
-  </section>
+  </div>
+  <div>
+    <img src="before.png">
+  </div>
+</section>
 
-  <section id="problem" class="alt">
-    <h2>Design Process: Before → During → After</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="before.png" alt="Before Design">
-        <h3>Before</h3>
-        <p>The existing plaza has limited greenery, little seating, and weak spatial identity.</p>
-      </div>
-
-      <div class="card">
-        <img src="during.png" alt="During Design">
-        <h3>During</h3>
-        <p>Early redesign studies explored better circulation, market activity, and green space integration.</p>
-      </div>
-
-      <div class="card">
-        <img src="after.png" alt="After Design">
-        <h3>After</h3>
-        <p>The final proposal creates a vibrant Harlem plaza with planting, seating, lighting, and community use.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="final">
-    <h2>Final Proposal</h2>
+<!-- DURING -->
+<section class="section light split" id="process">
+  <div>
+    <img src="during.png">
+  </div>
+  <div>
+    <h2>Design Exploration</h2>
     <p>
-      The final design introduces lush planting, curved benches, open lawn space,
-      safer pedestrian circulation, and flexible community market programming.
+      Early concepts introduced planting, vendor areas, and improved pedestrian
+      circulation to activate the space.
     </p>
-    <img class="final-image" src="harlem-plaza-render.png" alt="Final Proposal">
-  </section>
+  </div>
+</section>
 
-  <footer>
-    Midterm Project • AI-Assisted Urban Plaza Redesign
-  </footer>
+<!-- AFTER -->
+<section class="section split">
+  <div>
+    <h2>Final Direction</h2>
+    <p>
+      The final design creates a lively Harlem plaza with seating, greenery,
+      lighting, and flexible community use.
+    </p>
+  </div>
+  <div>
+    <img src="after.png">
+  </div>
+</section>
+
+<!-- FINAL FULL IMAGE -->
+<section id="final">
+  <img class="full-img" src="harlem-plaza-render.png">
+</section>
+
+<footer>
+  AI-Assisted Urban Plaza Redesign • Midterm Project
+</footer>
 
 </body>
 </html>
