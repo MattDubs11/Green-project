@@ -1,211 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Montefiore Square Redesign</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Plaza Redesign</title>
 
-<style>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+    /* SECTION */
+    #features {
+      padding: 80px 20px;
+    }
 
-body {
-  color: #fff;
-  background: #111;
-}
+    /* CIRCLES CONTAINER */
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  background: url('harlem-plaza-render.png') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+    /* CIRCLE STYLE */
+    .circle {
+      width: 130px;
+      height: 130px;
+      border: 2px solid rgba(255,255,255,0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 300;
-}
+    .circle:hover {
+      transform: scale(1.1);
+      border-color: white;
+    }
 
-.hero p {
-  margin: 20px 0;
-}
+    /* ICON SIZE */
+    .circle span {
+      font-size: 45px;
+    }
 
-.button {
-  border: 2px solid white;
-  padding: 12px 30px;
-  border-radius: 6px;
-  display: inline-block;
-}
-
-/* SECTION */
-.section {
-  padding: 80px 10%;
-  text-align: center;
-  background: #f4f4f4;
-  color: #333;
-}
-
-/* GRADIENT SECTION */
-.gradient {
-  background:
-    linear-gradient(135deg, #e37682, #5f4d93),
-    repeating-linear-gradient(
-      45deg,
-      rgba(255,255,255,0.05) 0px,
-      rgba(255,255,255,0.05) 2px,
-      transparent 2px,
-      transparent 20px
-    );
-  color: white;
-}
-
-/* FEATURES */
-.features {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.feature {
-  width: 30%;
-}
-
-.icon {
-  width: 120px;
-  height: 120px;
-  border: 2px solid rgba(255,255,255,0.5);
-  border-radius: 50%;
-  margin: 0 auto 20px;
-}
-
-/* GALLERY */
-.gallery-container {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-}
-
-.text {
-  width: 40%;
-  text-align: left;
-}
-
-.image-grid {
-  width: 60%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-
-/* FULL IMAGE */
-.full-image img {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-
-/* FOOTER */
-footer {
-  padding: 60px;
-  text-align: center;
-  background: #222;
-}
-
-</style>
+    /* OPTIONAL TITLES UNDER CIRCLES */
+    .label {
+      margin-top: 15px;
+      font-size: 16px;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div>
-    <h1>Montefiore Square Redesign</h1>
-    <p>Transforming urban space through design</p>
-    <div class="button">Explore</div>
-  </div>
-</section>
+  <section id="features">
+    <h1>Project Focus</h1>
 
-<!-- INTRO -->
-<section class="section">
-  <h2>Project Vision</h2>
-  <p>This redesign improves accessibility, green space, and community interaction.</p>
-</section>
+    <div class="circle-container">
 
-<!-- FEATURES -->
-<section class="section gradient">
-  <div class="features">
-    <div class="feature">
-      <div class="icon"></div>
-      <h3>Accessibility</h3>
-      <p>Better walkways and navigation.</p>
+      <div>
+        <div class="circle">
+          <span>⛏️</span>
+        </div>
+        <div class="label">Construction</div>
+      </div>
+
+      <div>
+        <div class="circle">
+          <span>🌿</span>
+        </div>
+        <div class="label">Environment</div>
+      </div>
+
+      <div>
+        <div class="circle">
+          <span>👥</span>
+        </div>
+        <div class="label">Community</div>
+      </div>
+
     </div>
-
-    <div class="feature">
-      <div class="icon"></div>
-      <h3>Sustainability</h3>
-      <p>Eco-friendly features and design.</p>
-    </div>
-
-    <div class="feature">
-      <div class="icon"></div>
-      <h3>Community</h3>
-      <p>Spaces for gathering and events.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="section gradient">
-  <div class="gallery-container">
-
-    <!-- TEXT -->
-    <div class="text">
-      <h2>Design Process</h2>
-      <p>
-        This project shows the transformation from the original plaza to the final redesign.
-      </p>
-      <div class="button">Learn More</div>
-    </div>
-
-    <!-- IMAGES -->
-    <div class="image-grid">
-      <img src="before.png" alt="Before">
-      <img src="during.png" alt="During">
-      <img src="after.png" alt="After">
-      <img src="harlem-plaza-render.png" alt="Render">
-      <img src="before.png" alt="Before repeat">
-      <img src="after.png" alt="After repeat">
-    </div>
-
-  </div>
-</section>
-
-<!-- FULL IMAGE -->
-<section class="section gradient full-image">
-  <img src="after.png" alt="Final Design">
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Montefiore Square Redesign</p>
-</footer>
+  </section>
 
 </body>
 </html>
