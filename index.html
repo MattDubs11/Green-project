@@ -8,53 +8,71 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-}
-
-/* NAVBAR */
-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 20px;
-  text-align: center;
-  background: rgba(0,0,0,0.6);
-  z-index: 1000;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+  background: #222;
 }
 
 /* HERO */
 header {
   height: 100vh;
-  background: url('plaza.jpg') center/cover no-repeat;
+  background: url("hero.jpg") center/cover no-repeat;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 48px;
+  font-weight: 300;
 }
 
-/* SECTIONS */
-section {
-  padding: 80px 20px;
+header p {
+  opacity: 0.7;
+}
+
+header button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+/* WHITE SECTION */
+.white-section {
+  background: #eee;
+  color: #555;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.white-section h2 {
+  font-weight: 300;
+  font-size: 40px;
+}
+
+/* GRADIENT SECTION */
+.gradient {
+  background: linear-gradient(135deg, #e67e73, #6a5acd);
+  padding: 100px 20px;
   text-align: center;
 }
 
 /* CIRCLES */
-.circle-container {
+.circle-row {
   display: flex;
   justify-content: center;
   gap: 80px;
-  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .circle {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   border: 2px solid rgba(255,255,255,0.5);
   border-radius: 50%;
   display: flex;
@@ -63,91 +81,77 @@ section {
 }
 
 .circle span {
-  font-size: 45px;
+  font-size: 40px;
 }
 
-/* GRID */
+/* TEXT COLUMNS */
+.columns {
+  display: flex;
+  gap: 40px;
+  padding: 80px;
+}
+
+.columns div {
+  flex: 1;
+}
+
+/* IMAGE GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 40px;
-}
-
-.grid div {
-  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .grid img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(0,0,0,0.6);
-  padding: 6px 12px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-  Montefiore Square Redesign
-</nav>
-
+<!-- HERO -->
 <header>
-  <h1>Reimagining Urban Space</h1>
+  <h1>Montefiore Square Redesign</h1>
+  <p>A redesigned urban space for community and sustainability</p>
+  <button>View Project</button>
 </header>
 
-<section>
-  <h2>Project Focus</h2>
+<!-- INTRO -->
+<section class="white-section">
+  <h2>Project Overview</h2>
+  <p>This redesign improves accessibility, sustainability, and community use of the plaza.</p>
+</section>
 
-  <div class="circle-container">
+<!-- FEATURES -->
+<section class="gradient">
+  <div class="circle-row">
+
     <div class="circle"><span>⛏️</span></div>
     <div class="circle"><span>🌿</span></div>
     <div class="circle"><span>👥</span></div>
+
   </div>
 </section>
 
-<section>
-  <h2>Before • During • After</h2>
-
-  <div class="grid">
+<!-- TEXT + IMAGES -->
+<section class="gradient">
+  <div class="columns">
 
     <div>
-      <img src="before1.jpg">
-      <div class="label">Before</div>
+      <h2>Design Process</h2>
+      <p>
+        This project transforms the plaza from its original layout into a more usable,
+        sustainable, and engaging environment.
+      </p>
     </div>
 
-    <div>
-      <img src="construction1.jpg">
-      <div class="label">During</div>
-    </div>
-
-    <div>
-      <img src="after1.jpg">
-      <div class="label">After</div>
-    </div>
-
-    <div>
-      <img src="before2.jpg">
-      <div class="label">Before</div>
-    </div>
-
-    <div>
-      <img src="construction2.jpg">
-      <div class="label">During</div>
-    </div>
-
-    <div>
+    <div class="grid">
+      <img src="before.jpg">
+      <img src="construction.jpg">
+      <img src="after.jpg">
       <img src="final.jpg">
-      <div class="label">Final</div>
     </div>
 
   </div>
